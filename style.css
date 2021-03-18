@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Recursive:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Recursive", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  min-height: 100vh;
+  padding: 3rem;
+  background-color: #c9c9c9;
+  text-align: center;
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  min-height: 40vh;
+  margin: 0 auto;
+  background: linear-gradient(
+      rebeccapurple 30%,
+      rgb(25, 154, 194) 30% 31%,
+      rgb(255, 255, 255) 31%
+    )
+    no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  border-radius: 9px;
+  box-shadow: 0 0 4px black;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  position: relative;
+}
+.img_holder {
+  display: inline-block;
+  width: 16rem;
+  height: 16rem;
+  margin: 0 auto;
+  background-color: white;
+  border: rgb(25, 154, 194) 10px solid;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.233);
+}
+img {
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: inline-block;
+}
+button {
+  display: inline-block;
+  padding: 1rem;
+  background-color: rgb(44, 44, 44);
+  color: white;
+  font-size: 1.3rem;
+  border-radius: 4px;
+  box-shadow: 0 0 4px rgba(73, 1, 55, 0.514);
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.btns button {
+  margin: 2rem 1rem;
+  padding: 0;
+  width: 3.4rem;
+  height: 3.4rem;
+  font-size: 3rem;
+  box-shadow: 0 0 4px rgba(73, 1, 55, 0.514);
+  color: rgba(27, 27, 27, 0.774);
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+  border: none;
+}
+.btns button span {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+
+  color: rgb(25, 154, 194);
+  top: 100%;
+  left: 0;
+  transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1) all;
+}
+.btns button:hover {
+  background-color: transparent;
+}
+.btns button:hover span {
+  transform: translateY(-100%);
+}
+.btns button > i {
+  transition: 0.4s cubic-bezier(0.19, 1, 0.22, 1) all;
+}
+.btns button:hover > i {
+  transform: translateY(-120%);
+}
+i {
+  pointer-events: none;
+}
+small {
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  background-color: rgb(25, 154, 194);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgb(73, 1, 55);
+  color: white;
+}
+button:active {
+  box-shadow: 0 2px 2px rgb(73, 1, 55);
+  transform: translateY(0px);
+  background-color: chocolate;
+}
+button:active span {
+  color: chocolate;
+}
+h1 {
+  font-weight: 500;
+  margin: 1rem;
+  margin-bottom: 0rem;
+  font-size: 2rem;
+}
+.active > i {
+  transform: translateY(-120%);
+}
+.active span {
+  transform: translateY(-100%);
+}
+.stars {
+  position: absolute;
+  left: 64%;
+  top: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  color: yellow;
+  font-size: 2rem;
+}
+.stars i {
+  padding: 0.2rem;
+  filter: drop-shadow(0 0px 1px rgb(251, 255, 4));
+}
